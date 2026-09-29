@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penghitung Jumlah Klik</title>
+</head>
+<body>
+
+    <h1>Penghitung Jumlah Klik - T4_083</h1>
+    <button id="btnKlik">Klik Saya</button>
+    <p id="hasilKlik">Jumlah klik: 0</p>
+
+    <script>
+        let jumlahKlik = 0;
+        const btnKlik = document.getElementById('btnKlik');
+        const hasilKlik = document.getElementById('hasilKlik');
+
+        btnKlik.addEventListener('click', () => {
+            jumlahKlik++;
+            hasilKlik.textContent = `Jumlah klik: ${jumlahKlik}`;
+        });
+    </script>
+
+</body>
+</html>

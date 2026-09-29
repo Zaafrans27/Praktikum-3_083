@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengubah Warna Latar Belakang</title>
+</head>
+<body>
+
+    <h1>Pengubah Warna Latar Belakang - T5_083</h1>
+    <button id="btnWarna">Ubah Warna</button>
+
+    <script>
+        const btnWarna = document.getElementById('btnWarna');
+
+        btnWarna.addEventListener('click', () => {
+            const warnaAcak = '#' + Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0');
+            document.body.style.backgroundColor = warnaAcak;
+        });
+    </script>
+
+</body>
+</html>
